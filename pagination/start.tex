@@ -1,0 +1,39 @@
+\graphicspath{images/}
+
+\Universita{University}
+\Dipartimento{Department}
+\CorsoDiLaurea{Degree}
+\AnnoAccademico{Academic Year 2021--2022}
+\Titolo{Title}
+\Relatore{Prof. Name \textsc{Surname}}
+\RelatoreLabel{Supervisor}
+\CandidatoLabel{Graduate Student}
+
+\Candidato{Name \textsc{Surname}} 
+\Matricola{mat}
+\DataEsame{day month year}
+\Logo{pagination/logo.png}
+\LogoWidth{4.5cm} %optional, default: 3cm
+\LogoPosition{top}
+% \LogoSfondo{pagination/logo_bn.png}
+% \opacitaSfondo{0.05}
+
+\begin{titlepage}
+    \newgeometry{left=3cm, right=3cm, bottom=2cm, top =3cm} 
+    % \pagestyle{empty}
+    \makefrontpage
+    % \restoregeometrys
+\end{titlepage}
+
+\frontmatter
+\pagenumbering{Roman}
+\clearpage
+
+\chapter*{Abstract}
+\input{chapters/abstract.tex}
+
+\tableofcontents
+
+% \printglossaries
+\printglossary[type=\acronymtype]
+\addcontentsline{toc}{chapter}{Glossario}

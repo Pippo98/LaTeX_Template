@@ -1,0 +1,68 @@
+% generals
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage[italian]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[svgnames]{xcolor}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage{acronym}
+\usepackage{gensymb}
+
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{float}
+\restylefloat{figure}
+
+\usepackage{blindtext}
+\usepackage{lastpage}
+
+% math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{braket}
+
+% first page
+\usepackage{title_page}
+\usepackage{tikz}
+\usepackage[pages=some]{background}
+
+% line at top of page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+% \fancyfoot[LE,RO]{\thepage}
+\fancyfoot[C]{\thepage}
+
+
+% bibliography
+\usepackage[style=numeric,sorting=none]{biblatex}
+\addbibresource{biblio.bib}
+
+% abstract
+\newenvironment{abstract}%
+    {\cleardoublepage%
+        \thispagestyle{empty}%
+        \null \vfill\begin{center}%
+            \bfseries \abstractname \end{center}}%
+        {\vfill\null}
+
+% index
+\usepackage{imakeidx}
+\makeindex
+
+% notations and symbols
+\usepackage{nomencl}
+\makenomenclature
+% \renewcommand{\nomname}{Sybol list}
+
+% load as last package to avoid problems with other packages
+\usepackage{glossaries}
+\makeglossaries
+% \renewcommand{\glossaryname}{Glossary}

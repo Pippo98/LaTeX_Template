@@ -1,0 +1,29 @@
+\documentclass[a4paper,twoside,12pt]{book}
+\input{pagination/packages}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black,%
+    pdftex}
+
+
+\begin{document}
+\raggedbottom
+\setlength{\headheight}{15pt}
+
+\onehalfspacing
+\pagenumbering{gobble}
+\input{pagination/start}
+\input{pagination/nomencl_glossary.tex}
+
+\mainmatter
+\chapter{Introduction}
+\input{chapters/chapter1.tex}
+
+\backmatter
+\input{pagination/end}
+
+\end{document}
